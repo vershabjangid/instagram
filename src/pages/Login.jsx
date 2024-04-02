@@ -11,32 +11,37 @@ import chatting from '../images/chatting.png'
 import name_logo from '../images/Instagram-Wordmark-Black-Logo.wine (1).svg'
 import playstore from '../images/playstore1 (1).png'
 import microsoft from '../images/microsoft1 (1).png'
+import mobile_img from "../images/mobile.bg.png"
 
 export function Login() {
     return (
         <>
             <div className='main'>
-                <div className='login w-[100%] h-[100vh] border border-1 border-[red] flex'>
-                    <div className='login_inner1 w-[50%] h-[100%] border border-1 border-[green] flex items-center justify-end'>
-                        <div className='mobile_section w-[400px] h-[90%] border border-1 border-[black]'>
-                            <img src={girlcat} alt="" className='girl_cat_img w-[56.8%] h-[480px] absolute top-[4.2%] right-[42px]' />
-                            <img src={chatting} alt="" className='chatting_img w-[56.8%] h-[480px] absolute top-[4.2%] right-[42px]' />
+                <div className='login w-[100%] h-[100vh] px-[7px] flex'>
+                    <div className='login_inner1 w-[50%] h-[100%] flex items-center justify-end'>
+                        <div className='mobile_section w-[450px]  flex items-center justify-end'>
+                            <figure className=' w-[420px] relative'>
+                                <img src={mobile_img} alt="" />
+                                <img src={girlcat} alt="" className='girl_cat_img w-[53.5%] h-[85%] absolute top-[4.2%] right-[13%]' />
+                            <img src={chatting} alt="" className='chatting_img w-[53.5%] h-[85%] absolute top-[4.2%] right-[13%]' />
+                            </figure>
+                            
                         </div>
                     </div>
-                    <div className='login_inner2 w-[50%] h-[100%] border border-1 border-[green] flex items-center'>
-                        <div className=' w-[370px]  border border-1 border-[black] p-[10px] py-[25px]'>
-                            <div className='logo border border-1 border-[blue] flex items-center justify-center'>
+                    <div className='login_inner2 w-[50%] h-[100%] flex items-center'>
+                        <div className='border border-4 border-[white] w-[370px] p-[10px] py-[25px]'>
+                            <div className='logo flex items-center justify-center'>
                                 <img src={name_logo} alt="" className='w-[60%] h-[100px]' />
                             </div>
 
 
-                            <div className='input_section border border-1 border-[red] py-[5px] flex justify-center items-center flex-col'>
+                            <div className='input_section py-[5px] flex justify-center items-center flex-col'>
                                 <input type="text" className='w-[80%] h-[32px] my-[5px] px-[5px]' placeholder="Phone number, username, or email" />
                                 <input type="text" className='w-[80%] h-[32px] px-[5px] ' placeholder="Password" />
                                 <button className=' w-[80%] my-[15px] py-[3px] rounded-[8px] text-[white] font-[750] bg-[rgba(76,180,245,1)]'>Log in</button>
 
 
-                                <div className='or flex items-center justify-between w-[80%] my-[6px] border'>
+                                <div className='or flex items-center justify-between w-[80%] my-[6px] '>
                                     <div className=' w-[40%] border border-1 border-[#80808075]'></div>
                                     <p>OR</p>
                                     <div className=' w-[40%] border border-1 border-[#80808075]'></div>
@@ -54,11 +59,11 @@ export function Login() {
                             </div>
 
 
-                            <div className='flex items-center justify-center my-[10px] border py-[15px]'>
+                            <div className='flex items-center justify-center my-[10px]  py-[15px]'>
                                 <p>Don't have an account? <span className='text-[#387397] font-[600]'>Sign up</span></p>
                             </div>
 
-                            <div className=' items-center justify-center my-[10px] border py-[10px]'>
+                            <div className=' items-center justify-center my-[10px]  py-[10px]'>
                                 <p className=' text-center'>Get the app.</p>
                                 <div className='app_download flex justify-center mt-[10px]'>
                                     <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=ig_mid%3D1B5E506A-9250-41E7-AE88-90ADAE1CECB9%26utm_campaign%3DloginPage%26utm_content%3Dlo%26utm_source%3Dinstagramweb%26utm_medium%3Dbadge" className='w-[130px] mr-[10px]'>
@@ -74,7 +79,11 @@ export function Login() {
 
                         </div>
                     </div>
+
+
                 </div>
+
+                
             </div>
         </>
     )
