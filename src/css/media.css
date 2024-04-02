@@ -1,2 +1,13 @@
-@media screen and (max-width:1200px) {
+@media screen and (max-width:875px) {
+    
+    .login_inner1{
+        display: none;
+    }
+
+    .login_inner2{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

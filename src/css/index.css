@@ -7,63 +7,67 @@
     background: linear-gradient(50deg,rgba(158,15,243,1),#fef2d4,rgba(197,82,244,1),rgba(255,27,122,1),#ff6086,#ff5f17,#fef2d4,#ffc151);
 }
 
-.mobile_img{
-    background-image: url("../../src/images/mobile.bg.png");
+.mobile_section{
+    background-image: url("../images/mobile.bg.png");
     background-size: cover;
-    height: 100%;
-    background-position: center;
-    background-position-y: center;    
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center !important;
+    position: relative;
 }
+
+
+.girl_cat_img{
+    opacity: 0;
+    animation: girlcat 20s 0s linear infinite;
+}
+
+
+
+@keyframes girlcat {
+    0%{
+        opacity: 0;
+    }
+    
+    50%{
+        opacity: 1;
+    }
+    
+    100%{
+        opacity: 0;
+    }
+}
+
 
 .chatting_img{
     opacity: 0;
-    visibility: hidden;
-    animation: img_changing 10s 0s linear infinite;
-}
-
-.girlcat_img{
-    opacity: 1;
-    visibility: visible;
-    animation: img_changing2 20s 0s linear infinite;
-}
-
-@keyframes img_changing{
-    0%{
-        opacity: 0;
-        visibility: hidden;
-    }
-
-
-    50%{
-        opacity: 1;
-        visibility: visible;
-    }
-
-    100%{
-        opacity: 0;
-        visibility: hidden;
-    }
+    animation: chatting 18s 0s linear infinite;
 }
 
 
-@keyframes img_changing2{
+@keyframes chatting {
     0%{
         opacity: 1;
-        visibility: visible;
     }
-
-
+    
     50%{
         opacity: 0;
-        visibility: hidden;
     }
-
+    
     100%{
         opacity: 1;
-        visibility: visible;
     }
 }
+
+.input_section>input{
+    border: 1px solid rgba(128, 128, 128, 0.568) ;
+    font-size: 14px;
+    outline: none;
+}
+
 
 .input_section>input::placeholder{
     font-size: 13px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.61);
 }

@@ -16,64 +16,62 @@ export function Login() {
     return (
         <>
             <div className='main'>
-                <div className='login w-[100%] border border-1 border-[red] h-[100vh] flex'>
-                    <div className='w-[50%] border border-1 border-[blue] flex justify-end'>
-                        <div className='mobile_img w-[60%] border border-1 border-[green] relative'>
-                            <img src={girlcat} alt="" className='girlcat_img absolute w-[61%] right-[7.6%] top-[4%]' />
-                            <img src={chatting} alt="" className='chatting_img absolute w-[61%] right-[7.6%] top-[4%]' />
+                <div className='login w-[100%] h-[100vh] border border-1 border-[red] flex'>
+                    <div className='login_inner1 w-[50%] h-[100%] border border-1 border-[green] flex items-center justify-end'>
+                        <div className='mobile_section w-[400px] h-[90%] border border-1 border-[black]'>
+                            <img src={girlcat} alt="" className='girl_cat_img w-[56.8%] h-[480px] absolute top-[4.2%] right-[42px]' />
+                            <img src={chatting} alt="" className='chatting_img w-[56.8%] h-[480px] absolute top-[4.2%] right-[42px]' />
                         </div>
                     </div>
-                    <div className='w-[50%] border border-1 border-[black] flex'>
-                        <div className='login_section w-[50%] p-[15px] border border-1 border-[purple] flex items-center justify-center flex-col'>
-                            <div className='w-[100%] bg-[white] border border-2 border-[#3d3d3da6] flex items-center justify-center flex-col px-[20px]'>
-                                <img src={name_logo} alt="" className='w-[70%]' />
-
-                                <div className='input_section w-[100%]'>
-                                    <input type="text" placeholder='Phone number, username, or email' className='w-[100%] h-[35px] mb-[3px] pl-[10px] border border-1 border-[#8080805d]' />
-                                    <input type="password" placeholder='Enter password' className='w-[100%] h-[35px] border border-1 border-[#8080805d] pl-[10px]' />
-                                </div>
-
-                                <button className='w-[100%] bg-[#3bbaec] my-[15px] py-[5px] rounded-[10px] text-[white] font-[550]'>Log in</button>
-
-                                <div className='flex items-center justify-between w-[100%]'>
-                                    <div className=' border-b-2 border-[#8080805d] w-[40%]'></div>
-                                    <p className='text-[14px] text-[#5f5e5e] font-[550]'>OR</p>
-                                    <div className=' border-b-2 border-[#8080805d] w-[40%]'></div>
-                                </div>
-
-
-                                <div className='login_facebook text-[#1d4566] flex items-center mt-[20px]'>
-                                    <AiFillFacebook className='text-[20px]' />
-                                    <p className='text-[15px] ml-[5px] font-[550]'>Log in with Facebook</p>
-                                </div>
-
-                                <div className='forgot_password text-[12px] text-[#1d4566] my-[15px]'>
-                                    <p>Forgot Password?</p>
-                                </div>
+                    <div className='login_inner2 w-[50%] h-[100%] border border-1 border-[green] flex items-center'>
+                        <div className=' w-[370px]  border border-1 border-[black] p-[10px] py-[25px]'>
+                            <div className='logo border border-1 border-[blue] flex items-center justify-center'>
+                                <img src={name_logo} alt="" className='w-[60%] h-[100px]' />
                             </div>
 
 
-                            <div className='dont_have_account w-[100%] bg-[white] mt-[10px] border border-2 border-[#3d3d3da6] py-[15px]'>
-                                <p className=' text-center text-[15px]'>Don't have an account?<span className=' text-[#3bbaec] font-[550] cursor-pointer'> Sign up</span></p>
-                            </div>
+                            <div className='input_section border border-1 border-[red] py-[5px] flex justify-center items-center flex-col'>
+                                <input type="text" className='w-[80%] h-[32px] my-[5px] px-[5px]' placeholder="Phone number, username, or email" />
+                                <input type="text" className='w-[80%] h-[32px] px-[5px] ' placeholder="Password" />
+                                <button className=' w-[80%] my-[15px] py-[3px] rounded-[8px] text-[white] font-[750] bg-[rgba(76,180,245,1)]'>Log in</button>
 
-                            <div className='w-[100%] border border-1 border-[red] mt-[10px]'>
-                                <div className='w-[100%] text-center'>
-                                    <p>Get the app.</p>
+
+                                <div className='or flex items-center justify-between w-[80%] my-[6px] border'>
+                                    <div className=' w-[40%] border border-1 border-[#80808075]'></div>
+                                    <p>OR</p>
+                                    <div className=' w-[40%] border border-1 border-[#80808075]'></div>
                                 </div>
-                                <div className='w-[100%] flex items-center justify-center mt-[5px]'>
-                                    <div className='w-[50%] flex items-center justify-center'>
-                                        <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=ig_mid%3D1B5E506A-9250-41E7-AE88-90ADAE1CECB9%26utm_campaign%3DloginPage%26utm_content%3Dlo%26utm_source%3Dinstagramweb%26utm_medium%3Dbadge" className=' flex justify-center'>
-                                            <img src={playstore} alt="" className='w-[90%]' />
-                                        </a>
+
+
+                                <a href="https://m.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fm.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26locale%3Den_US%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26response_type%3Dcode%252Cgranted_scopes%26scope%3Demail%26state%3D%257B%2522fbLoginKey%2522%253A%25221n25ngc2g45xf10dupeg4y98x7o6odcrjn73tl1i6d6hth7slcz%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Deb12281f-89bc-464c-9e59-121966bbba5a%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%25221n25ngc2g45xf10dupeg4y98x7o6odcrjn73tl1i6d6hth7slcz%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%23_%3D_&display=touch&locale=en_GB&pl_dbl=0&refsrc=deprecated&_rdr" className='w-[80%]'>
+                                    <div className='flex  items-center justify-center my-[10px] text-[rgb(65,81,131,1)]'>
+                                        <AiFillFacebook className='mr-[5px] text-[19px]' />
+                                        <p>Log in with Facebook</p>
                                     </div>
-                                    <div className='w-[50%] flex items-center justify-center'>
-                                        <a href="https://www.microsoft.com/store/productId/9NBLGGH5L9XT?ocid=pdpshare" className=' flex justify-center'>
-                                            <img src={microsoft} alt="" className='w-[72%]' />
-                                        </a>
-                                    </div>
+                                </a>
+
+                                <p className='text-[12px] text-[rgb(39,62,133)]'>Forgot password?</p>
+                            </div>
+
+
+                            <div className='flex items-center justify-center my-[10px] border py-[15px]'>
+                                <p>Don't have an account? <span className='text-[#387397] font-[600]'>Sign up</span></p>
+                            </div>
+
+                            <div className=' items-center justify-center my-[10px] border py-[10px]'>
+                                <p className=' text-center'>Get the app.</p>
+                                <div className='app_download flex justify-center mt-[10px]'>
+                                    <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=ig_mid%3D1B5E506A-9250-41E7-AE88-90ADAE1CECB9%26utm_campaign%3DloginPage%26utm_content%3Dlo%26utm_source%3Dinstagramweb%26utm_medium%3Dbadge" className='w-[130px] mr-[10px]'>
+                                        <img src={playstore} alt="" className='w-[100%]' />
+                                    </a>
+
+
+                                    <a href="https://www.microsoft.com/store/productId/9NBLGGH5L9XT?ocid=pdpshare" className='w-[110px]'>
+                                        <img src={microsoft} alt="" className='w-[100%]' />
+                                    </a>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
