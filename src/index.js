@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './css/index.css';
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { Login } from './pages/Login';
+import { Login } from './pages/web/Login';
+import { Forgot_password } from './pages/web/Forgot_password';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let routes = createBrowserRouter([
@@ -11,6 +12,11 @@ let routes = createBrowserRouter([
     path:"/",
     element:<Login/>
   },
+
+  {
+    path:'/forgot_password',
+    element:<Forgot_password/>
+  }
 ])
 root.render(
   <React.StrictMode>
