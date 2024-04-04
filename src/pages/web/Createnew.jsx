@@ -14,7 +14,7 @@ export function Createnew() {
     <>
       <div className='main'>
         <div className='createnew w-[100%] '>
-          <div className='createnew_outer h-[100vh] flex items-center justify-center'>
+          <div className='createnew_outer flex items-center justify-center'>
             <div className='createnew_inner1 w-[80%] h-[100%] my-[10px] flex items-center justify-center flex-col'>
 
               <div className='createnew_login w-[380px] border border-4 pb-[20px] border-[white]'>
@@ -43,32 +43,32 @@ export function Createnew() {
                 </div>
 
                 <div className='w-[100%] flex justify-center flex-col mt-[20px]'>
-                  <div className='flex items-center justify-center mb-[10px] '>
-                    <input type="text" className='w-[80%] h-[35px] pl-[6px]' placeholder='Email or Mobile Number' />
+                  <div className='email_input flex items-center justify-center mb-[10px] '>
+                    <input type="text" className=' w-[80%] h-[35px] pl-[6px]' placeholder='Email or Mobile Number' required />
                   </div>
 
-                  <div className='flex items-center justify-center mb-[10px] '>
-                    <input type="text" className='w-[80%] h-[35px] pl-[6px]' placeholder='Full Name' />
+                  <div className='fullname_input flex items-center justify-center mb-[10px] '>
+                    <input type="text" className='w-[80%] h-[35px] pl-[6px]' placeholder='Full Name' required />
                   </div>
 
-                  <div className='flex items-center justify-center mb-[10px] '>
-                    <input type="text" className='w-[80%] h-[35px] pl-[6px]' placeholder='Username' />
+                  <div className='username_input flex items-center justify-center mb-[10px] '>
+                    <input type="text" className='w-[80%] h-[35px] pl-[6px]' placeholder='Username' required />
                   </div>
 
-                  <div className='flex items-center justify-center mb-[10px] '>
-                    <input type="text" className='w-[80%] h-[35px] pl-[6px]' placeholder='Password' />
+                  <div className='password_input flex items-center justify-center mb-[10px] '>
+                    <input type="text" className='w-[80%] h-[35px] pl-[6px]' placeholder='Password' required />
                   </div>
                 </div>
 
                 <div className='w-[100%] flex justify-center'>
                   <div className='w-[80%] text-center text-[14px]'>
-                    <p>People who use our service may have uploaded your contact information to Instagram. Learn More</p>
+                    <p>People who use our service may have uploaded your contact information to Instagram. <span className='text-[blue]'> Learn More</span></p>
                   </div>
                 </div>
 
-                <div className='w-[100%] flex justify-center mt-[10px]'>
+                <div className='w-[100%] flex justify-center mt-[15px]'>
                   <div className='w-[80%] text-center text-[14px]'>
-                    <p>By signing up, you agree to our Terms , Privacy Policy and Cookies Policy .</p>
+                    <p>By signing up, you agree to our <span className='text-[blue]'> Terms , Privacy Policy</span> and <span className='text-[blue]'> Cookies Policy .</span></p>
                   </div>
                 </div>
 

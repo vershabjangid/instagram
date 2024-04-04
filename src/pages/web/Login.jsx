@@ -41,7 +41,7 @@ export function Login() {
                                 <div className='input_section py-[5px] flex justify-center items-center flex-col'>
                                     <input type="text" className='w-[80%] h-[32px] my-[5px] px-[5px]' placeholder="Phone number, username, or email" />
                                     <input type="text" className='w-[80%] h-[32px] px-[5px] ' placeholder="Password" />
-                                    <button className=' w-[80%] my-[15px] py-[3px] rounded-[8px] text-[white] font-[750] bg-[rgba(76,180,245,1)]'>Log in</button>
+                                    <Link to={"/home"} className=' w-[80%] text-center my-[15px] py-[3px] rounded-[8px] text-[white] font-[750] bg-[rgba(76,180,245,1)]'>Log in</Link>
 
 
                                     <div className='or flex items-center justify-between w-[80%] my-[6px] '>
@@ -63,7 +63,7 @@ export function Login() {
 
 
                                 <div className='flex items-center justify-center my-[10px]  py-[15px]'>
-                                    <p>Don't have an account? <span className='text-[#0095f6] font-[600]'>Sign up</span></p>
+                                    <p>Don't have an account? <span className='text-[#0095f6] font-[600]'><Link to={"/createnew"}>Sign up</Link></span></p>
                                 </div>
 
                                 <div className=' items-center justify-center my-[10px]  py-[10px]'>

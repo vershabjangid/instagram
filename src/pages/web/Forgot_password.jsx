@@ -13,7 +13,7 @@ export function Forgot_password() {
   return (
     <>
 
-      <div className='main border border-1 border-[red]'>
+      <div className='main '>
         <div className='forgot_outer'>
           <div className='forgot h-[100vh]'>
 
@@ -24,7 +24,7 @@ export function Forgot_password() {
               </div>
             </header>
 
-            <div className='forgot_inner w-[80%] h-[89%] border border-1 border-[blue] m-[auto] flex items-center justify-center'>
+            <div className='forgot_inner w-[80%] h-[89%]  m-[auto] flex items-center justify-center'>
               <div className='forgot_form w-[400px] border border-4 border-[white]'>
                 <div className='lock_section  pt-[15px] pb-[10px] flex justify-center items-center flex-col'>
                   <div className='w-[110px] h-[110px] border border-2 border-[black] rounded-[50%] flex items-center justify-center'>
