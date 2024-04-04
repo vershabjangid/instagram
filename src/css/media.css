@@ -37,6 +37,27 @@
     }
 }
 
+@media screen and (max-width:1100px) {
+    .createnew_outer{
+        height: auto;
+    }
+
+    .createnew_inner1{
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    .createnew_outer{
+        height: auto;
+    }
+
+    .createnew_inner1{
+        height: 100%;
+    }
+}
+
 
 
 @media screen and (max-width:520px){
@@ -55,6 +76,15 @@
     }
     .forgot_button>button{
         width: 95%;
+    }
+
+    .createnew_inner1{
+        width: 100%;
+        padding: 0px 10px;
+    }
+
+    .createnew_login{
+        width: 100%;
     }
 }
 

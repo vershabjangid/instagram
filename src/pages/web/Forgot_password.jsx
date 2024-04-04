@@ -60,7 +60,7 @@ export function Forgot_password() {
                 </div>
 
                 <div className='w-[100%] flex justify-center text-[15px] font-[550]'>
-                  <p>Create new account</p>
+                 <Link to={"/createnew"}><p>Create new account</p></Link>
                 </div>
 
                 <Link to={"/"}>
@@ -76,7 +76,7 @@ export function Forgot_password() {
 
             </div>
           </div>
-          <Loginbottom/>
+          <Loginbottom />
         </div>
       </div>
     </>
