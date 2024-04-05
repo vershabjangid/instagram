@@ -6,7 +6,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { Login } from './pages/web/Login';
 import { Forgot_password } from './pages/web/Forgot_password';
 import { Createnew } from './pages/web/Createnew';
-import { Home } from './pages/Home';
+import { Home } from '../src/pages/web/Home';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let routes = createBrowserRouter([
