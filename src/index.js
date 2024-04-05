@@ -7,6 +7,7 @@ import { Login } from './pages/web/Login';
 import { Forgot_password } from './pages/web/Forgot_password';
 import { Createnew } from './pages/web/Createnew';
 import { Home } from '../src/pages/web/Home';
+import { Saveinfo } from './pages/web/Saveinfo';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let routes = createBrowserRouter([
@@ -23,6 +24,11 @@ let routes = createBrowserRouter([
   {
     path:"/createnew",
     element:<Createnew/>
+  },
+
+  {
+    path:"/saveinfo",
+    element:<Saveinfo/>
   },
 
   {

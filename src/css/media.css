@@ -21,6 +21,18 @@
         display: none;
     }
 
+    .save_info_section{
+        width: calc(100% - 70px);
+    }
+
+
+    .save_info_inner{
+        width: 340px;
+    }
+
+    .home_inner{
+        width: calc(100% - 70px);
+    }
 }
 
 
@@ -168,6 +180,26 @@
     .notification_option{
         display: none;
     }
+
+    /*save_info_section*/
+    
+    .save_info_section{
+        width:100%;
+        height: calc(100vh - 50px);
+    }
+
+    /*header*/
+
+    .header{
+        display: block;
+        display: flex;
+    }
+
+    /*home*/
+    .home_inner{
+        width: 100%;
+        margin-top: 75px;
+    }
 }
 
 
@@ -199,6 +231,30 @@
     .createnew_login{
         width: 100%;
     }
+
 }
 
+@media screen and (max-width:475px) {
+    .search_and_notification{
+        width: auto;
+    }
+    
+    .search_icon{
+        display: block;
+    }
 
+    .search_section{
+        display: none;
+    }
+}
+
+@media screen and (max-width:390px) {
+
+    .save_info_section{
+        padding: 0 10px;
+    }
+    
+    .save_info_inner{
+        width: 100%;
+    }
+}
