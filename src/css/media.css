@@ -4,6 +4,21 @@
     }
 }
 
+@media screen and (max-width:1159px) {
+    .home_inner{
+        display: flex;
+        justify-content: center;
+    }
+
+    .friends_suggestion_section{
+        display: none;
+    }
+    
+    .home_reels_section{
+        width: 600px;
+    }
+}
+
 @media screen and (max-width:1263px) {
 
     .home_sidebar{
@@ -199,6 +214,15 @@
     .home_inner{
         width: 100%;
         margin-top: 75px;
+        /* padding: 0 10px; */
+    }
+
+    .home_reels_section{
+        width: 100%;
+    }
+
+    .status_outer{
+        margin: 0;
     }
 }
 
