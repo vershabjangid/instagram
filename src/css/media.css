@@ -29,6 +29,20 @@
     .save_info_inner{
         width: 340px;
     }
+
+    .home_content_inner{
+        width: calc(100% - 70px);
+    }
+}
+
+@media screen and (max-width:1159px) {
+    .home_content_inner_section1{
+        width: 100%;
+    }
+    .home_content_inner_section2{
+        display: none;
+    }
+    
 }
 
 
@@ -191,6 +205,16 @@
         display: flex;
     }
 
+    .home_content_inner{
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .slider{
+        width: 100%;
+        margin-top: 70px;
+    }
+
 }
 
 
@@ -249,3 +273,4 @@
         width: 100%;
     }
 }
+
