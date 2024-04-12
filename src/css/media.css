@@ -215,6 +215,10 @@
         margin-top: 70px;
     }
 
+    .home_content{
+        margin-bottom: 54px;
+    }
+
 }
 
 
@@ -245,6 +249,31 @@
 
     .createnew_login{
         width: 100%;
+    }
+
+
+    .home_content_inner{
+        width: 100%;
+    }
+
+    .home_content_inner_section1{
+        width: 100%;
+    }
+
+    .home_post_upload_section{
+        width: 100%;
+    }
+    .home_post_section{
+        width: 100%;
+    }
+
+    .account-btn{
+        display: none;
+    }
+
+    .mute-btn{
+        position: absolute;
+        right: 0;
     }
 
 }

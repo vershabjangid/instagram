@@ -8,6 +8,7 @@ import { Forgot_password } from './pages/web/Forgot_password';
 import { Createnew } from './pages/web/Createnew';
 import { Home } from '../src/pages/web/Home';
 import { Saveinfo } from './pages/web/Saveinfo';
+import { InstaStoryslider } from './common/web/InstaStoryslider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let routes = createBrowserRouter([
@@ -35,6 +36,13 @@ let routes = createBrowserRouter([
     path:"/home",
     element:<Home/>
   },
+
+  //common routes
+
+  {
+    path:"/story",
+    element:<InstaStoryslider/>
+  }
 ])
 root.render(
   <React.StrictMode>

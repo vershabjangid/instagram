@@ -133,3 +133,26 @@
 .status_outer{
     background: linear-gradient(50deg,rgba(158,15,243,1),#fef2d4,rgba(197,82,244,1),rgba(255,27,122,1),#ff6086,#ff5f17,#fef2d4,#ffc151);
 }
+
+
+.home_post_section{
+    border-bottom: 1px solid white;
+}
+
+.postimageslider1{
+    display: flex !important; 
+    align-items: center;
+}
+
+.postimageslider1>img{
+    width: 100% !important;
+    height: auto;
+}
+
+.videoimageslider1{
+    display: flex !important; 
+    align-items: center;
+    justify-content: center;
+
+}
+

@@ -7,10 +7,16 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 import { Statuselement } from '../../common/web/Statuselement';
+import { Postcard } from '../../common/web/Postcard';
+
 import my_img from '../../images/myimg.jpeg'
-import { BsThreeDots } from 'react-icons/bs';
+import { Loginbottom } from '../../common/web/Loginbottom';
+
+
 
 export function Home() {
+
+
     var settings = {
         dots: false,
         infinite: false,
@@ -160,11 +166,12 @@ export function Home() {
                 <Header />
                 <Sidebar />
                 <div className='home_content w-[100%] h-[100vh] bg-[black] relative overflow-y-scroll'>
-                    <div className='home_content_inner absolute right-0 w-[82%] border border-1 border-[navy] pt-[20px] flex'>
-                        <div className='home_content_inner_section1 border border-1 border-[yellow] w-[65%] text-[white] '>
-                            <div className='slider_section w-[100%] border border-1 border-[purple]'>
-                                <div className='w-[100%] border border-1 border-[green] flex items-center justify-center '>
-                                    <Slider {...settings} className='slider w-[90%] border border-1 border-[blue]'>
+                    <div className='home_content_inner absolute right-0 w-[82%] pt-[20px] flex'>
+                        {/* post right section */}
+                        <div className='home_content_inner_section1 w-[65%] text-[white] '>
+                            <div className='slider_section w-[100%]'>
+                                <div className='w-[100%] flex items-center justify-center mt-[5px] '>
+                                    <Slider {...settings} className='slider w-[90%] '>
                                         <Statuselement />
                                         <Statuselement />
                                         <Statuselement />
@@ -199,38 +206,97 @@ export function Home() {
                                 </div>
                             </div>
 
-                            <div className='w-[100%] border border-1 border-[blue] mt-[12px] flex justify-center'>
-                                <div className='home_post_section w-[468px] border border-1 border-[green] '>
-                                    <div className='post_user_information flex items-center justify-between py-[5px]'>
-                                        <div className='flex items-center'>
-                                            <div className='profile_section'>
-                                                <div className='w-[35px] h-[35px] border border-1 border-[green] rounded-[50%] overflow-hidden'>
+                            <div className='home_post_upload_section w-[100%]  mt-[12px]  '>
+                                <Postcard />
+                            </div>
+                        </div>
+                        <div className='home_content_inner_section2 w-[35%] flex justify-end'>
+                            <div className='w-[350px] flex justify-center'>
+                                <div className='w-[90%] '>
+                                    <div className='flex justify-between items-center h-[70px]'>
+                                        <div className="profile_in_suggestion flex">
+                                            <div className='w-[45px] h-[45px] rounded-[50%] overflow-hidden'>
+                                                <img src={my_img} alt="" />
+                                            </div>
+
+                                            <div className='user_id_name ml-[10px] '>
+                                                <p className='text-[white] text-[15px] font-[550]'>vershab_jangid</p>
+                                                <p className='text-[grey] text-[15px] font-[500]'>vershab jangid</p>
+                                            </div>
+                                        </div>
+                                        <div className="switch text-[#427af1] text-[13px]">Switch</div>
+                                    </div>
+
+
+                                    <div className='text-[white] flex justify-between text-[14px]'>
+                                        <p className='text-[grey] text-[15px] font-[550]'>Suggested for you</p>
+                                        <p className='font-[550]'>See All</p>
+                                    </div>
+
+                                    <div className=''>
+
+                                        <div className='flex justify-between items-center h-[60px] '>
+                                            <div className="profile_in_suggestion flex">
+                                                <div className='w-[45px] h-[45px] rounded-[50%] overflow-hidden'>
                                                     <img src={my_img} alt="" />
                                                 </div>
+
+                                                <div className='user_id_name ml-[10px] '>
+                                                    <p className='text-[white] text-[15px] font-[550]'>vershab_jangid</p>
+                                                    <p className='text-[grey] text-[15px] font-[500]'>followed by vershab jangid</p>
+                                                </div>
                                             </div>
-                                            <div className='id_name_and_track_name ml-[10px] leading-5'>
-                                                <p className='text-[15px] font-[550]'>vershab_jangid <span className='text-[grey]'>· 5h</span></p>
-                                                <p className='text-[13px]'>scorpio_lovers___007·Scorpio Is Always King 🥷</p>
-                                            </div>
+                                            <div className="switch text-[#427af1] text-[13px]">Follow</div>
                                         </div>
 
-                                        <div className='text-[17px]'>
-                                            <BsThreeDots />
+                                        <div className='flex justify-between items-center h-[60px] '>
+                                            <div className="profile_in_suggestion flex">
+                                                <div className='w-[45px] h-[45px] rounded-[50%] overflow-hidden'>
+                                                    <img src={my_img} alt="" />
+                                                </div>
+
+                                                <div className='user_id_name ml-[10px] '>
+                                                    <p className='text-[white] text-[15px] font-[550]'>vershab_jangid</p>
+                                                    <p className='text-[grey] text-[15px] font-[500]'>followed by vershab jangid</p>
+                                                </div>
+                                            </div>
+                                            <div className="switch text-[#427af1] text-[13px]">Follow</div>
                                         </div>
-                                    </div>
-                                    <div className='post_section h-[auto] border border-1 border-[grey] '>
-                                        <div className='w-[100%] border-1 border-[gold] flex items-center justify-center'>
-                                            <img src={my_img} alt="" className='w-[100%]' />
+
+
+                                        <div className='flex justify-between items-center h-[60px] '>
+                                            <div className="profile_in_suggestion flex">
+                                                <div className='w-[45px] h-[45px] rounded-[50%] overflow-hidden'>
+                                                    <img src={my_img} alt="" />
+                                                </div>
+
+                                                <div className='user_id_name ml-[10px] '>
+                                                    <p className='text-[white] text-[15px] font-[550]'>vershab_jangid</p>
+                                                    <p className='text-[grey] text-[15px] font-[500]'>followed by vershab jangid</p>
+                                                </div>
+                                            </div>
+                                            <div className="switch text-[#427af1] text-[13px]">Follow</div>
                                         </div>
+
+
+                                        <div className='flex justify-between items-center h-[60px] '>
+                                            <div className="profile_in_suggestion flex">
+                                                <div className='w-[45px] h-[45px] rounded-[50%] overflow-hidden'>
+                                                    <img src={my_img} alt="" />
+                                                </div>
+
+                                                <div className='user_id_name ml-[10px] '>
+                                                    <p className='text-[white] text-[15px] font-[550]'>vershab_jangid</p>
+                                                    <p className='text-[grey] text-[15px] font-[500]'>followed by vershab jangid</p>
+                                                </div>
+                                            </div>
+                                            <div className="switch text-[#427af1] text-[13px]">Follow</div>
+                                        </div>
+
                                     </div>
-                                    <div className='like_comment_section'>
-                                        
-                                    </div>
-                                    <div className=''></div>
                                 </div>
                             </div>
                         </div>
-                        <div className='home_content_inner_section2 border border-1 border-[red] w-[35%]'></div>
                     </div>
                 </div>
             </div>
