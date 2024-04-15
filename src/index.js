@@ -9,6 +9,7 @@ import { Createnew } from './pages/web/Createnew';
 import { Home } from '../src/pages/web/Home';
 import { Saveinfo } from './pages/web/Saveinfo';
 import { InstaStoryslider } from './common/web/InstaStoryslider';
+import {Profile_section} from './pages/web/Profile_section';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let routes = createBrowserRouter([
@@ -35,6 +36,11 @@ let routes = createBrowserRouter([
   {
     path:"/home",
     element:<Home/>
+  },
+
+  {
+    path:"/profile user",
+    element:<Profile_section/>
   },
 
   //common routes

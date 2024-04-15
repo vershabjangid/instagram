@@ -4,6 +4,7 @@ import { FaRegFaceLaughBeam } from 'react-icons/fa6'
 import { Imageslider } from './Imageslider'
 import my_img from '../../images/myimg.jpeg'
 import { Videoslider } from './Videoslider'
+import { Link } from 'react-router-dom'
 
 export function Postcard() {
     return (
@@ -18,7 +19,7 @@ export function Postcard() {
                                 </div>
                             </div>
                             <div className='id_name_and_track_name ml-[10px] leading-5'>
-                                <p className='text-[15px] font-[550]'>vershab_jangid <span className='text-[grey]'>· 5h</span></p>
+                               <Link to={"/profile user"}><p className='text-[15px] font-[550]'>vershab_jangid <span className='text-[grey]'>· 5h</span></p></Link>
                                 <p className='text-[13px]'>scorpio_lovers___007·Scorpio Is Always King 🥷</p>
                             </div>
                         </div>

@@ -5,11 +5,11 @@
 
 /*login_page*/
 
-.login{
-    background: linear-gradient(50deg,rgba(158,15,243,1),#fef2d4,rgba(197,82,244,1),rgba(255,27,122,1),#ff6086,#ff5f17,#fef2d4,#ffc151);
+.login {
+    background: linear-gradient(50deg, rgba(158, 15, 243, 1), #fef2d4, rgba(197, 82, 244, 1), rgba(255, 27, 122, 1), #ff6086, #ff5f17, #fef2d4, #ffc151);
 }
 
-.girl_cat_img{
+.girl_cat_img {
     opacity: 0;
     animation: girlcat 20s 0s linear infinite;
 }
@@ -17,57 +17,58 @@
 
 
 @keyframes girlcat {
-    0%{
+    0% {
         opacity: 0;
     }
-    
-    50%{
+
+    50% {
         opacity: 1;
     }
-    
-    100%{
+
+    100% {
         opacity: 0;
     }
 }
 
 
-.chatting_img{
+.chatting_img {
     opacity: 0;
     animation: chatting 18s 0s linear infinite;
 }
 
 
 @keyframes chatting {
-    0%{
+    0% {
         opacity: 1;
     }
-    
-    50%{
+
+    50% {
         opacity: 0;
     }
-    
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
 
-.input_section>input{
-    border: 1px solid rgba(128, 128, 128, 0.568) ;
+.input_section>input {
+    border: 1px solid rgba(128, 128, 128, 0.568);
     font-size: 14px;
     outline: none;
 }
 
 
-.input_section>input::placeholder{
+.input_section>input::placeholder {
     font-size: 13px;
     font-weight: 500;
     color: rgba(0, 0, 0, 0.61);
 }
-.bottom_section>ul>li{
+
+.bottom_section>ul>li {
     margin-right: 10px !important;
 }
 
-.bottom_section>ul>li:hover{
+.bottom_section>ul>li:hover {
     border-bottom: 1px solid blue;
 }
 
@@ -75,8 +76,8 @@
 /*forgot_page*/
 
 
-.forgot_outer{
-    background: linear-gradient(50deg,rgba(158,15,243,1),#fef2d4,rgba(197,82,244,1),rgba(255,27,122,1),#ff6086,#ff5f17,#fef2d4,#ffc151);
+.forgot_outer {
+    background: linear-gradient(50deg, rgba(158, 15, 243, 1), #fef2d4, rgba(197, 82, 244, 1), rgba(255, 27, 122, 1), #ff6086, #ff5f17, #fef2d4, #ffc151);
 }
 
 
@@ -84,75 +85,78 @@
 
 /*create new account*/
 
-.createnew{
-    background: linear-gradient(50deg,rgba(158,15,243,1),#fef2d4,rgba(197,82,244,1),rgba(255,27,122,1),#ff6086,#ff5f17,#fef2d4,#ffc151);
+.createnew {
+    background: linear-gradient(50deg, rgba(158, 15, 243, 1), #fef2d4, rgba(197, 82, 244, 1), rgba(255, 27, 122, 1), #ff6086, #ff5f17, #fef2d4, #ffc151);
 }
 
-.email_input>input::placeholder{
+.email_input>input::placeholder {
     font-size: 13px;
 }
 
-.fullname_input>input::placeholder{
+.fullname_input>input::placeholder {
     font-size: 13px;
 }
 
-.username_input>input::placeholder{
+.username_input>input::placeholder {
     font-size: 13px;
 }
 
-.password_input>input::placeholder{
+.password_input>input::placeholder {
     font-size: 13px;
 }
 
 
 /*sidebar*/
 
-.home_sidebar{
+.home_sidebar {
     border-right: 1px solid rgb(61, 61, 61);
     z-index: 9999;
 }
 
-.icon_logo{
+.icon_logo {
     display: none;
 }
 
 
 /*header*/
 
-.search_icon{
+.search_icon {
     display: none;
 
 }
 
-.header{
+.header {
     border-bottom: 1px solid grey;
     display: none;
     z-index: 9999;
 }
 
-.status_outer{
-    background: linear-gradient(50deg,rgba(158,15,243,1),#fef2d4,rgba(197,82,244,1),rgba(255,27,122,1),#ff6086,#ff5f17,#fef2d4,#ffc151);
+.status_outer {
+    background: linear-gradient(50deg, rgba(158, 15, 243, 1), #fef2d4, rgba(197, 82, 244, 1), rgba(255, 27, 122, 1), #ff6086, #ff5f17, #fef2d4, #ffc151);
 }
 
 
-.home_post_section{
+.home_post_section {
     border-bottom: 1px solid white;
 }
 
-.postimageslider1{
-    display: flex !important; 
+.postimageslider1 {
+    display: flex !important;
     align-items: center;
 }
 
-.postimageslider1>img{
+.postimageslider1>img {
     width: 100% !important;
     height: auto;
 }
 
-.videoimageslider1{
-    display: flex !important; 
+.videoimageslider1 {
+    display: flex !important;
     align-items: center;
     justify-content: center;
 
 }
 
+.porfile_photo_and_status_inner {
+    background: linear-gradient(50deg, rgba(158, 15, 243, 1), #fef2d4, rgba(197, 82, 244, 1), rgba(255, 27, 122, 1), #ff6086, #ff5f17, #fef2d4, #ffc151);
+}

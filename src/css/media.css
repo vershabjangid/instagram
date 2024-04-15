@@ -33,6 +33,10 @@
     .home_content_inner{
         width: calc(100% - 70px);
     }
+
+    .profile_content_inner{
+        width: calc(100% - 70px);
+    }
 }
 
 @media screen and (max-width:1159px) {
@@ -77,7 +81,11 @@
     }
 }
 
-
+@media screen and (max-width:1080px) {
+    .profile_content_main_inner{
+        width: 100%;
+    }
+}
 @media screen and (max-width:767px) {
     .home_sidebar{
         width: 100%;
@@ -219,6 +227,15 @@
         margin-bottom: 54px;
     }
 
+    .profile_content_inner{
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .profile_content{
+        margin-bottom: 54px;
+    }
+
 }
 
 
@@ -256,6 +273,7 @@
         width: 100%;
     }
 
+
     .home_content_inner_section1{
         width: 100%;
     }
@@ -275,6 +293,11 @@
         position: absolute;
         right: 0;
     }
+
+    .profile_content_inner{
+        width: 100%;
+    }
+    
 
 }
 
