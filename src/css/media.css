@@ -34,7 +34,8 @@
         width: calc(100% - 70px);
     }
 
-    .profile_content_inner{
+
+    .profile_content_main{
         width: calc(100% - 70px);
     }
 }
