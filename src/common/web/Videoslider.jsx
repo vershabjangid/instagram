@@ -40,7 +40,6 @@ export function Videoslider() {
                 </div>
             </Slider>
 
-
         </>
     )
 }

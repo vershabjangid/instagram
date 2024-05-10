@@ -164,3 +164,17 @@
 .profile_picture_main_circle {
     background: linear-gradient(50deg, rgba(158, 15, 243, 1), #fef2d4, rgba(197, 82, 244, 1), rgba(255, 27, 122, 1), #ff6086, #ff5f17, #fef2d4, #ffc151);
 }
+
+
+.home_content::-webkit-scrollbar{
+    opacity: 0;
+    display: none;
+}
+
+.awssld__bullets {
+    display: none;
+}
+
+.awssld__bullets .awssld__bullets--active{
+    display: none;
+}
